@@ -1,0 +1,66 @@
+.crm-desc {
+  margin-top: 60px;
+  color: azure;
+  font-size: 2rem;
+}
+
+.crm-desc h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 150px;
+  color: #64dfdf;
+}
+
+.author {
+  height: 40px;
+  width: 58%;
+  margin: 190px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  display: flex;
+}
+
+.author img {
+  height: 100%;
+  border-radius: 100px;
+}
+
+.author h3 {
+  font-size: 2rem;
+  margin: 9px 0 6px 5px;
+  padding-right: 10px;
+  border-right: 2px solid #64dfdf;
+}
+
+.author p {
+  font-size: 2rem;
+  margin: 10px 0 6px 10px;
+}
+
+.whycrm {
+  width: 1100px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.crm-desc p {
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.crm-desc h4 {
+  font-size: 3.5rem;
+  color: #64dfdf;
+  margin-bottom: 20px;
+}
+
+.crm-desc ul {
+  list-style: circle;
+  margin-left: 100px;
+}
+
+.crm-desc ul li {
+  text-align: justify;
+  margin-bottom: 30px;
+}
+

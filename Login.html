@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-menu">
+      <a href="main.html"><img src="../BiyeDaalt/img/logo-white-bg.png" alt="logo"></a>
+    </div>
+
+    <div class="header-login">
+      <ul>
+        <li><a href="main.html">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+      <div class="loginbtn">
+        <button onclick="loginfunc()">Login</button>
+      </div>
+    </div>
+  </header>
+
+  <main style="height: 100vh;">
+    <div class="login-form">
+      <img src="../BiyeDaalt/img/X.png" alt="esc" class="esc" onclick="esc()">
+      <form action="get" style="width: 90%;">
+        <h2>Login</h2>
+        <div class="login-information" style="margin-bottom: 50px;">
+          <input type="text" name="username" autocomplete="off" required>
+          <label for="username">Email</label>
+          <img src="../BiyeDaalt/img/user.png" alt="username">
+        </div>
+  
+        <div class="login-information">
+          <input type="password" name="pass" required>
+          <label for="pass">Password</label>
+          <img src="../BiyeDaalt/img/lock.png" alt="username">
+        </div>
+  
+        <div class="pass-mng">
+          <input type="checkbox" name="remember">
+          <label for="remember">Remember me</label>
+          <a href="#">Forgot password?</a>
+        </div>
+  
+        <button class="login-btn">Login</button>
+  
+        <div class="register" onclick="reg()">
+          <label for="register">Don't have an account? <a href="#">Register</a></label>
+        </div>
+      </form>
+    </div>
+  
+    <div class="register-form">
+      <img src="../BiyeDaalt/img/X.png" alt="esc" class="esc" onclick="esc()">
+      <form action="get">
+        <h2 style="margin-left: 160px;">Register</h2>
+        <div class="login-information" style="margin-bottom: 30px; width: 72%;">
+          <input type="text" name="username" autocomplete="off" required>
+          <label for="username">Username</label>
+          <img src="../BiyeDaalt/img/user.png" alt="username">
+        </div>
+  
+        <div class="login-information" style="margin-bottom: 30px; width: 72%;">
+          <input type="text" name="pass" required>
+          <label for="pass">Email</label>
+          <img src="../BiyeDaalt/img/email.png" alt="username">
+        </div>
+  
+        <div class="login-information" style="margin-bottom: 0px; width: 72%;">
+          <input type="password" name="pass" required>
+          <label for="pass">Password</label>
+          <img src="../BiyeDaalt/img/lock.png" alt="username">
+        </div>
+  
+        <div class="pass-mng" style="margin-top: 22px;">
+          <input type="checkbox" name="remember">
+          <label for="remember">I agree to the terms & conditions</label>
+        </div>
+  
+        <button class="login-btn">Register</button>
+  
+        <div class="register" onclick="log()">
+          <label for="register">Already have an account? <a href="#">Login</a></label>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper-main" style="border-bottom: 1px solid #10002b; height: 250px; display: flex;">
+      <div class="footer-sm">
+        <a href="../BiyeDaalt/main.html"><img src="../BiyeDaalt/img/logo-blue-bg-.png" alt="logo"></a>
+        <ul>
+          <li><a href="#"><img src="../BiyeDaalt/img/facebook-pink.png" alt="facebook" class="footer-fb"></a></li>
+          <li><a href="#"><img src="../BiyeDaalt/img/twitter-pink.png" alt="twitter" class="footer-x"></a></li>
+          <li><a href="#"><img src="../BiyeDaalt/img/instagram-dark.png" alt="instagram" class="footer-ins"></a></li>
+          <li><a href="#"><img src="../BiyeDaalt/img/youtube-black.png" alt="youtube" class="footer-yt"></a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-contact">
+        <h3>Help</h3>
+        <ul>
+          <li><a href="#">Question / Answer</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-contact">
+        <h3>Service</h3>
+        <ul>
+          <li><a href="#">Price</a></li>
+          <li><a href="#">Experts</a></li>
+        </ul>
+
+        <div class="language-toggle">
+          <span class="language" style="font-size: 12.5px; color: white;">EN/MN</span>
+          <input type="checkbox" class="check">
+        </div>
+      </div>
+  
+      <div class="footer-contact" style="margin-right: 0;">
+        <h3>Other Product</h3>
+        <ul>
+          <li><a href="#">Playmax</a></li>
+          <li><a href="#">9anime</a></li>
+          <li><a href="#">Gogoanime</a></li>
+          <li><a href="#">Aniwatchtv</a></li>
+          <li><a href="#">AnimeSuge</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <p class="wrapper-main">2024 © "Neko LLC" All rights reserved.</p>
+  </footer>
+</body>
+
+
+<script> 
+  let login = document.querySelector(".loginbtn");
+  let loginform = document.querySelector(".login-form");
+  let registerform = document.querySelector(".register-form");
+
+  function loginfunc() {
+    if (loginform.style.visibility === "hidden" && registerform.style.visibility === "hidden") {
+      loginform.style.visibility = "visible";
+      loginform.style.opacity = 1;
+      loginform.style.transform = "scale(1)";
+    } else {
+      loginform.style.visibility = "hidden";
+      loginform.style.opacity = 0;
+      loginform.style.transform = "scale(0)";
+      loginform.style.left = "550px";
+      registerform.style.visibility = "hidden";
+      registerform.style.opacity = 0;
+    }
+  }
+
+  function esc() {
+    loginform.style.visibility = "hidden";
+    loginform.style.opacity = 0;
+    loginform.style.left = "550px"
+    registerform.style.visibility = "hidden";
+    registerform.style.opacity = 0;
+  }
+
+  function reg() {
+      loginform.style.visibility = "hidden";
+      loginform.style.opacity = 0;
+      loginform.style.left = "260px";
+      registerform.style.visibility = "visible";
+      registerform.style.opacity = 1;
+      registerform.style.left = "550px";
+  }
+
+  function log() {
+      registerform.style.visibility = "hidden";
+      registerform.style.opacity = 0;
+      registerform.style.left = "860px";
+      loginform.style.visibility = "visible";
+      loginform.style.opacity = 1;
+      loginform.style.left = "550px";
+  } 
+</script>
+
+</html>

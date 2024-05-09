@@ -1,0 +1,121 @@
+/* FOOTER */
+
+.footer {
+  width: 100%;
+  height: 310px;
+  background-color: #240046;
+  margin-top: 150px;
+  position: relative;
+  margin-top: 100px;
+}
+
+.footer p {
+  color: #e0aaff;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-sm {
+  margin: 40px 0;
+}
+
+.footer-sm a img {
+  height: 50px;
+}
+
+.footer-sm ul {
+  display: flex;
+  list-style: none;
+  margin-top: 100px;
+  margin-right: 400px;
+}
+
+.footer-sm ul li {
+  margin-left: 8px;
+}
+
+.footer-sm ul li a img {
+  height: 30px;
+}
+
+.footer-fb:hover {
+  content: url(../BiyeDaalt/img/facebook-colored.png);
+}
+
+.footer-x:hover {
+  content: url(../BiyeDaalt/img/twitter-colored.png);
+}
+
+.footer-ins:hover {
+  content: url(../BiyeDaalt/img/instagram-colored.png);
+}
+
+.footer-yt:hover {
+  content: url(../BiyeDaalt/img/youtube-colored.png);
+}
+
+.footer-contact {
+  margin-top: 40px;
+  margin-right: 50px;
+  width: 150px;
+}
+
+.footer-contact h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #9d4edd;
+}
+
+.footer-contact ul li {
+  margin-bottom: 20px;
+}
+
+.footer-contact ul li a {
+  font-size: 1.4rem;
+}
+
+.footer-contact ul li a:hover {
+  color: #64dfdf;
+}
+
+.check {
+  position: relative;
+  width: 25px;
+  margin-left: 0;
+}
+
+.check::before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 15px;
+  background: #4D5059;
+  border-radius: 25px;
+}
+
+.check:hover {
+  cursor: pointer;
+}
+
+.check:checked::before {
+  background: #5A2E98;
+}
+
+.check::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 25px;
+  transition: 0.25s;
+  border: 2px solid #4D5059;
+  box-sizing: border-box;
+}
+
+.check:checked::after {
+  left: 10px;
+  border: 2px solid #5A2E98;
+}

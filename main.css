@@ -1,0 +1,454 @@
+@font-face {
+  font-family: Poppins;
+  src: url(../BiyeDaalt/Font/Poppins-Medium.ttf);
+}
+
+body {
+  background-color: #10002b;
+  font-family: Poppins;
+}
+body::after {
+  content: 
+  url(../BiyeDaalt/img/facebook-colored.png),
+  url(../BiyeDaalt/img/twitter-colored.png),
+  url(../BiyeDaalt/img/instagram-colored.png),
+  url(../BiyeDaalt/img/youtube-colored.png);
+}
+
+main {
+  background-image: url(../BiyeDaalt/img/crm-hero.png);
+  height: calc(100vh - 60px);
+  width: 100%;
+  background-position: 110% 50%;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  color: #e0aaff;
+  margin-top: 60px;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.wrapper-main {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/* HEADER STYLE */
+
+.main-header {
+  height: 60px;
+  width: 100%;
+  background-color: #240046;
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.header-menu {
+  height: 100%;
+  display: flex;
+}
+
+.header-menu img {
+  height: 80%;
+  margin: 5px 30px;
+}
+
+.header-menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.header-menu ul li {
+  text-align: center;
+}
+
+.header-menu ul li a {
+  height: 100%;
+  display: block;
+  padding: 0 30px;
+  line-height: 60px;
+  color: #e0aaff;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.header-menu ul li:nth-child(2) {
+  width: 210px;
+}
+
+.header-menu ul li ul {
+  display: none;
+}
+
+.header-menu ul li ul li {
+  background-color: #240046;
+}
+
+.header-menu ul li:hover > ul {
+  display: block;
+}
+
+.header-menu ul li a:hover {
+  background-color: #3c096c;
+  color: #64dfdf;
+}
+
+/* HEADER LOG IN */
+
+.header-login {
+  display: flex;
+}
+
+.searchbar form input {
+  height: 25px;
+  margin-top: 15px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 0;
+  font-size: 1.6rem;
+}
+
+.searchbar form button {
+  position: relative;
+  top: 5.5px;
+  left: -5px;
+  height: 27px;
+  border: 0;
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.searchbar form button img {
+  height: 20px;
+  background-position: 50% 50%;
+  margin-top: 3px;
+}
+
+.loginbtn {
+  width: 90px;
+  height: 27px;
+  background-color: #3c096c;
+  margin: 15px 40px 0 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.loginbtn a {
+  font-size: 1.6rem;
+  line-height: 25px;
+  color: #e0aaff;
+  padding-bottom: 2px;
+  display: block;
+  border-radius: 10px;
+}
+
+.loginbtn a:hover {
+  color: #64dfdf;
+  background-color: #9d4edd;
+}
+
+/* HERO SECTION */
+
+.main-quote {
+  margin-top: 140px;
+  margin-left: 80px;
+  width: 40%;
+  position: absolute;
+}
+
+.main-quote h2 {
+  font-size: 8rem;
+  color: #9d4edd;
+}
+
+.main-quote h3 {
+  font-size: 2.5rem;
+  color: #9d4edd;
+}
+
+.main-quote p {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+main a {
+  background-color: #240046;
+  color: #e0aaff;
+  position: absolute;
+  top: 450px;
+  left: 80px;
+  padding: 20px 30px;
+  font-size: 1.8rem;
+  transition: all ease-in-out 250ms;
+}
+
+main a:hover {
+  background-color: #3c096c;
+  color: #64dfdf;
+}
+
+/* CATEGORY SECTION */
+
+.category-section {
+  display: flex;
+  margin-top: 70px;
+}
+
+.category-section ul {
+  list-style: none;
+  display: flex;
+}
+
+.category-section ul li {
+  background-color: #111;
+  margin: 30px 0;
+  margin-right: 98px;
+  height: 20rem;
+  width: 20rem;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.category-section ul li:nth-child(1) {
+  background-image: url(../BiyeDaalt/img/advantage.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.category-section ul li:nth-child(2) {
+  background-image: url(../BiyeDaalt/img/quistion-mark.avif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.category-section ul li:nth-child(3) {
+  background-image: url(../BiyeDaalt/img/vs.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.category-section ul li:nth-child(4) {
+  background-image: url(../BiyeDaalt/img/graph.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.category-section ul li a {
+  line-height: 100px;
+  font-size: 2.5rem;
+  height: 100%;
+  width: 100%;
+  color: azure;
+  font-weight: bold;
+  display: block;
+}
+
+.category-section ul li a:hover {
+  color: #64dfdf;
+}
+
+.category-section ul li:hover {
+  margin-top: 20px;
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.main-content h2 {
+  color: #9d4edd;
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.main-content h3 {
+  color: #9d4edd;
+  text-align: center;
+  padding: 20px;
+  font-size: 3rem;
+}
+
+.main-content video {
+  background-color: #9d4edd;
+  width: 900px;
+  margin: 20px 210px 200px 305px;
+}
+
+.main-section-information {
+  display: flex;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #64dfdf;
+}
+
+.main-section-information img {
+  width: 498px;
+  height: 300px;
+  background-color: #9d4edd;
+}
+
+.information {
+  margin-left: 50px;
+  position: relative;
+}
+
+.information h3 {
+  margin-bottom: 20px;
+  text-align: left;
+  padding: 0;
+}
+
+.information h3 a {
+  font-size: 3rem;
+  color: #9d4edd;
+}
+
+.information p {
+  font-size: 1.6rem;
+  color: #e0aaff;
+}
+
+.information .more {
+  color: #e0aaff;
+  font-size: 1.6rem;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.information a:hover {
+  color: #64dfdf;
+}
+
+/* CONTRIBUTORS */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+}
+
+.contributors {
+  width: calc(100% / 5.5);
+}
+
+.contributors img {
+  height: 150px;
+  width: 150px;
+  margin-left: 25px;
+  border-radius: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contributors h3 {
+  height: 8.3rem;
+}
+
+.contributors h3 {
+  text-align: center;
+  transition: all ease-in-out 200ms;
+}
+
+.contributors a:hover > h3 {
+  color: #64dfdf;
+  background-color: #3c096c;
+}
+
+/* CRM FEATURES */
+
+.crm-features {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+}
+
+.crm-features p {
+  font-size: 2rem;
+  color: #e0aaff;
+  line-height: 25px;
+  margin-right: 10px;
+}
+
+.main-graphic-container {
+  width: 75rem;
+  height: 2.5rem;
+  background-color: #10002b;
+}
+
+.main-graphic-container-fill p {
+  font-size: 2rem;
+  float: right;
+  margin: 3.5px 8px;
+}
+
+.main-graphic-container-fill {
+  background-color: #3c096c;
+  width: 100%;
+  height: 100%;
+}
+
+.cm {
+  width: 94%;
+}
+
+.ti {
+  width: 88%;
+}
+
+.SR {
+  width: 85%;
+}
+
+.PFM {
+  width: 26%;
+}
+
+.SA {
+  width: 22%;
+}
+
+.CA {
+  width: 20%;
+}
+
+.EM {
+  width: 20%;
+}
+
+.C {
+  width: 18%;
+}
+
+.RA {
+  width: 17%;
+}
+
+.I {
+  width: 16%;
+}
+
+.LG {
+  width: 9%;
+}
